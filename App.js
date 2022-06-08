@@ -2,8 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import * as Location from "expo-location";
-
-const WEATHER_API_KEY = "9033e10f66d05fc0c557ccbea72fba1b";
+const WEATHER_API_KEY = "";
 
 export default function App() {
   const [errorMessage, setErrorMessage] = useState(null);
@@ -27,6 +26,7 @@ export default function App() {
     } catch (error) {}
   }
 
+  console.log(WEATHER_API_KEY);
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
